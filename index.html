@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
- <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <title>testy test</title>
 </head>
 <body>
- <script>
-   function onSubmit(token) {
-     document.getElementById("demo-form").submit();
-   }
- </script>
-<button class="g-recaptcha" 
-        data-sitekey="6LcjZKArAAAAAFu4BCVNdqR0q8OlB2vhrrO8-MQ3" 
-        data-callback='onSubmit' 
-        data-action='submit'>Submit</button>
+<form action="?" method="POST">
+      <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
 <h1>It works!!!!!</h1>
 </body>
 </html>

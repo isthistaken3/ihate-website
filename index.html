@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <script src="https://www.google.com/recaptcha/api.js"></script>
 <title>testy test</title>
 </head>
 <body>
-
+ <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+ </script>
+<button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
 <h1>It works!!!!!</h1>
 </body>
 </html>
